@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Travel | All In One</title>
+  <link rel="icon" type="image/x-icon" href="all in one.png">
+  <link rel="stylesheet" href="travel.css">
+</head>
+
+<main>
+  <body>
+    <script src="travel.js"></script>
+      <div id="navbar">
+        <a href="index.html" id="logo">All In One</a>
+        <div id="navbar-right">
+          <a class="active" href="index.html#intro_section">Home</a>
+          <a href="index.html#info_section">About</a>
+          <a href="index.html#end_section">Contact</a>
+        </div>
+      </div>
+
+      <section id="select_section">
+
+        <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">Flight</button>
+        <button class="tablink" onclick="openCity('Paris', this, 'green')">Bus</button>
+        <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Car</button>
+        <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Cruise</button>
+        <button class="tablink" onclick="openCity('Chennai', this, 'purple')">Train</button>
+
+      <div id="London" class="tabcontent">
+        <h1>Flight</h1>
+        <p>Compare And Find The Best Flight Rates Here!</p>
+        <div id="input_row">
+        <input class="flight_input" placeholder="From Airport">
+        <input class="flight_input" placeholder="To Airport">
+        <input class="flight_input" placeholder="Date">
+        </div>
+      </div>
+      
+      <div id="Paris" class="tabcontent">
+        <h1>Bus</h1>
+        <p>The Best Bus Rides You Will Find In Town Is Here!</p>
+        <div id="input_row">
+          <input class="bus_input" placeholder="From Stop">
+          <input class="bus_input" placeholder="To Stop">
+          <input class="bus_input" placeholder="Date">
+      </div>  
+      </div>
+      
+      <div id="Tokyo" class="tabcontent">
+        <h1>Car</h1>
+        <p>Rent A Car Of Your Choice Right Now!</p>
+
+        <div id="button_div">
+          <button id="myButton">Without Fuel</button>
+          <button id="myButton">With Fuel</button>
+        </div>
+
+        <div id="input_row">
+          <input class="car_input" placeholder="From">
+          <input class="car_input" placeholder="To">
+          <input class="car_input" placeholder="Date">
+        </div>  
+      </div>
+      
+      <div id="Oslo" class="tabcontent">
+        <h1>Cruise</h1>
+        <p>Experience Cruising At Your Nearest Shore!</p>
+        <div id="input_row">
+          <input class="bus_input" placeholder="From Port">
+          <input class="bus_input" placeholder="To Port">
+          <input class="bus_input" placeholder="Date">
+        </div> 
+      </div>
+      
+      <div id="Chennai" class="tabcontent">
+        <h1>Train</h1>
+        <p>Travel In Train And Get The Work Done!</p>
+        <div id="input_row">
+          <input class="bus_input" placeholder="From Station">
+          <input class="bus_input" placeholder="To Station">
+          <input class="bus_input" placeholder="Date">
+        </div> 
+      </div>
+
+
+    </section>
+
+  </body>
+</main>
